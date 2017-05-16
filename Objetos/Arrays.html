@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<meta name="author" content="Denisse Villamar">
+		<title>Manejo de Hipervinculos</title>
+	</head>
+	<body>
+		<h2 id="inicio">Metodos Adicionales</h2>
+		<h3 id="refDate">Objetos Date</h3>
+			<a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Date" target="_blank">Manejo Date</a>
+		<h3 id="refArray">Objetos Array</h3>
+			<a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array" target="_blank">Manejo Array</a>
+		
+		<h1>Arrays</h1>
+		<p id="a1"></p>
+		<p id="a2"></p>
+
+		<h1>Arrays Operaciones</h1>
+		<p id="a3"></p>
+		<p id="a4"></p>
+		<p id="a5"></p>
+		<p id="a6"></p>
+		<p id="a7"></p>
+		<p id="a8"></p>
+
+		<a href="#inicio">Inicio</a>
+	</body>
+
+	<script>
+		// Arrays definicion
+		var futbol = ["Balon", "Jugadores", "Cancha"];
+		var animales = new Array("Oso", "Aguila", "Ballena");
+
+		document.getElementById("a1").innerHTML = futbol;
+		document.getElementById("a2").innerHTML = animales;
+
+		//Arrays Operaciones
+		futbol[1]="Arbitros"; //Reemplazar valor de un array
+		document.getElementById("a3").innerHTML = futbol;
+		document.getElementById("a4").innerHTML = futbol.length; //Tamaño del array
+
+		futbol[futbol.length]="Hinchada"; //Almacenas valor en la ultima posicion
+		document.getElementById("a5").innerHTML = futbol;
+
+		futbol.reverse(); // Invertir el orden de los elementos
+		document.getElementById("a6").innerHTML = futbol;
+
+		animales.sort(); //Ordenar los elementos
+		document.getElementById("a7").innerHTML = animales;
+		
+		var arrayConca= animales.concat(futbol);
+		document.getElementById("a8").innerHTML = arrayConca;
+
+	</script>
+</html>
