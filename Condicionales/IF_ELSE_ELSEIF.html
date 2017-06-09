@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Manejo de Condicionales</title>
+	</head>
+	<body>
+		<h1>IF</h1>
+		<p>Total de la compra: $5000</p>
+		<p id="desc"> </p>
+		<button onclick="descuento()">Descuento</button>
+		<h1>ELSE</h1>
+		<h2>Personal Mayor de Edad</h2>
+		<p>Edad 25</p>
+		<p id="edad"></p>
+		<button onclick="verificarEdad()">Verificar Edad</button>
+		<h1>ELSE IF</h1>
+		<h2>Colores</h2>
+		<p id="color"></p>
+		<button onclick="verificarColor()">Verificar Color</button>
+	</body>
+	<script>
+		var total=5000;
+
+		function descuento(){
+			if (total > 2000){
+				document.getElementById("desc").innerHTML = "Gano descuento!!";
+			}
+		}
+		var edad=25;
+		function verificarEdad(){
+			if(edad>=25){
+				document.getElementById("edad").innerHTML = "Es mayor de Edad";
+			}else{
+				document.getElementById("edad").innerHTML = "Es menor de Edad";
+			}
+		}
+		var color = "azul";
+		function verificarColor(){
+			if(color == "rojo"){
+				document.getElementById("color").innerHTML = "El color es rojo";
+			}else if(color == "azul"){
+				document.getElementById("color").innerHTML = "El color es azul";
+			}else{
+				document.getElementById("color").innerHTML = "Sin Color";
+			}
+		}
+	</script>
+</html>
