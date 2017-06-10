@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ciclo WHILE y DO WHILE</title>
+	</head>
+	<body>
+		<h1>Ciclo WHILE</h1>
+		<h2>Conteo del 1 al 50 :: WHILE</h2>
+		<p id="salida"></p>
+		<button onclick="conteo()">Iniciar Conteo</button>
+		<h1>Ciclo DO WHILE</h1>
+		<h2>Conteo del 50 al 100 :: DO WHILE</h2>
+		<p id="salida2"></p>
+		<button onclick="conteo2()">inicia Conteo</button>
+	</body>
+	<script>
+		function conteo(){
+			var texto = "";
+			var contador = 1;
+			while(contador <= 50){
+				texto += contador+"<br>";
+				contador++;
+			}
+			document.getElementById("salida").innerHTML=texto;
+		}
+		function conteo2(){
+			var text = "";
+			var contador = 50;
+			var x;
+			do{
+				text+=contador+"<br>";
+				contador++;
+			}while(contador <= 100);
+			document.getElementById("salida2").innerHTML = text;
+		}
+
+	</script>
+</html>

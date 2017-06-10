@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+
+  
+
+    <p id="salida"></p>
+
+
+
+
+
+</body>
+
+<script>
+
+		var contador = 1;
+		var texto = "";
+
+
+		while (contador <= 100) {
+
+		    if (contador % 2 != 0) {
+		        texto += contador + " <br>";
+		    }
+
+		    contador++;
+
+		}
+
+		document.getElementById("salida").innerHTML = texto;
+
+</script>
+
+</html>

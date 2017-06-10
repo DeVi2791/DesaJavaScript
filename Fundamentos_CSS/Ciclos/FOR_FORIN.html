@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ciclo FOR y FOR IN</title>
+	</head>
+	<body>
+		<h1>Ciclo FOR</h1>
+		<h2>Mostrar Equipos de Futbol de un Arreglo :: FOR</h2>
+		<p id="salida"></p>
+		<button onclick="mostrarEquipos()">Mostrar Equipos</button>
+
+		<h2>Mostrar Productos :: FOR IN</h2>
+		<p id="salida2"></p>
+		<button onclick="mostrarProducto()">Mostrar Producto</button>
+	</body>
+	<script>
+		function mostrarEquipos(){
+			var texto = "Equipos: <br>";
+			var equipos = ["Liverpool","Barcelona","Juventus","Real Madrid","Roma"];
+			for (var i=0; i<equipos.length;i++){
+				texto+=equipos[i]+" <br> ";
+			}
+			document.getElementById("salida").innerHTML=texto;
+		}
+		function mostrarProducto(){
+			var text = "Producto:<br>";
+			var producto = {
+				codigo: "001",
+				nombre: "lapiz",
+				precio: 2000
+			};
+			var x;
+			for (x in producto) {
+				text+=producto[x]+"<br>";
+			}
+			document.getElementById("salida2").innerHTML = text;
+		}
+
+	</script>
+</html>
