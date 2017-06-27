@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+  	<h1>Try Catch</h1>
+  	<button onclick="miFuncion1()">Ejecutar Funcion 1</button>
+  	<button onclick="miFuncion2()">Ejecutar Funcion 2</button>
+  </body>
+  <script>
+  	function miFuncion1() {
+  		try{
+  			var numero1=50;
+  			var numero = numero1 + numero2; // La variable numero 2 no esta definida.
+  		}catch(error){
+  			alert("Existe un Error"+" - "+error.message);
+  		}
+
+  	}
+
+  	function miFuncion2(){
+  		try{
+  			var persona=null;
+  			var nombre = persona.nombre;//Se esta tratando de acceder a un objeto nulo.
+  		}catch(error){
+  			alert("Existe un Error"+" - "+error.message);
+  		}
+  	}
+  </script>
+</html>

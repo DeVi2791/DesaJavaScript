@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manejo de Errores - Finally</title>
+</head>
+<body>
+	<h1>finally</h1>
+	<p id="mensaje"></p>
+	<button onclick="miFuncion1()">Ejecutar Funcion1</button>
+</body>
+<script>
+	function miFuncion1(){
+		try{
+			var edad=60;
+			calcular(edad);//la funcion no existe
+		}catch(error){
+			alert("Existe un error"+" - "+error.message);
+		}finally{
+			document.getElementById("mensaje").innerHTML = "Seguimos pese al error!!!";
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+
+   
+
+    <p id="mensaje"></p>
+
+    <button onclick="miFuncion()">Ejecutar Funcion</button>
+
+
+
+
+
+
+</body>
+
+<script>
+
+
+		function miFuncion() {
+
+		    try {
+
+		        var estudiante = null;
+
+		        alert(estudiante.nombre);
+
+		    } catch (error) {
+
+		        alert("Existe un Error" + " - " + error.message);
+		    } finally {
+		        document.getElementById("mensaje").innerHTML = "Estamos en la sentencia finally!!";
+		    }
+
+		}
+
+
+</script>
+
+</html>

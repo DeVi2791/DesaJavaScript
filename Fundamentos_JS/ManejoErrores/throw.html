@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manejo de Errores Throw</title>
+</head>
+<body>
+	<h1>Throw</h1>
+	<button onclick="miFuncion1()">Ejecutar Funcion 1</button>
+	<button onclick="miFuncion2()">Ejecutar funcion 2</button>
+</body>
+<script>
+	function miFuncion1() {
+		try{
+			var mensaje = "Esto es un mensaje desde Java Script";
+			if (isNaN(parseInt(mensaje))){
+				throw "Paramentro pasado al metodo parseInt no es un número!";
+			}
+		}catch(error){
+			alert("Existe un Error"+" - "+error);
+		}
+	}
+	function miFuncion2(){
+		try{
+			var res =45/0;
+			if (res==Infinity){
+				throw "Division entre cero no es vàlida!";
+			}
+		}catch (error){
+			alert("Existe un error"+" - "+error );
+		}
+	}
+</script>
+</html>

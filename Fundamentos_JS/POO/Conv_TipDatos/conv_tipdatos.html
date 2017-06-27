@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversion de Tipo de Datos</title>
+</head>
+<body>
+	<h1>Conversion Tipo de Datos</h1>
+	<h2>Number a String</h2>
+	<p id="NaS1"></p>
+	<p id="NaS2"></p>
+	<h2>Boolean a String</h2>
+	<p id="BaS1"></p>
+	<p id="BaS2"></p>
+	<h2>Fecha a String</h2>
+	<p id="DaS1"></p>
+	<p id="DaS2"></p>
+	<h2>String a Number</h2>
+	<p id="SaN1"></p>
+	<p id="SaN2"></p>
+	<h2>Bolean a Number</h2>
+	<p id="BaN1"></p>
+	<p id="BaN2"></p>
+</body>
+<script>
+	var num = 15;
+	var num1 = 30;
+	document.getElementById("NaS1").innerHTML = String(15);
+	document.getElementById("NaS2").innerHTML = num1.toString();
+
+	document.getElementById("BaS1").innerHTML = true.toString();
+	document.getElementById("BaS2").innerHTML = String(false);
+
+	document.getElementById("DaS1").innerHTML = String(Date());
+	document.getElementById("DaS2").innerHTML = Date().toString();
+
+	document.getElementById("SaN1").innerHTML = Number("4.5");
+	var a = "45.8 frutas";
+	document.getElementById("SaN2").innerHTML = a.parseFloat();
+
+	document.getElementById("BaN1").innerHTML = Number(true);
+	document.getElementById("BaN2").innerHTML = Number(false);
+</script>
+</html>
