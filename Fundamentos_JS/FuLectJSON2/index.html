@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi primer JS</title>
+</head>
+<body>
+	<p id="empresas"></p>
+</body>
+<script type="text/javascript">
+	var jsonText = '{"empresas":['+
+						'{"nit":"3432-1","nombre":"TCC","telefono":"3324993","email":"tcc@nextu.com"},'+
+						'{"nit":"5567-1","nombre":"Movistar","telefono":"3556566","email":"movistar@nextu.com"},'+
+						'{"nit":"67657-1","nombre":"Nokia","telefono":"335689","email":"nokia@nextu.com"},'+
+						'{"nit":"8795-1","nombre":"Puma","telefono":"789451","email":"puma@nextu.com"},'+
+						'{"nit":"12345-1","nombre":"Sony","telefono":"874523","email":"sony@nextu.com"}'+ ']}';
+
+	var jsObj = JSON.parse(jsonText);
+
+	function leerJSON (json){
+		var out = "--------- Empresas-------------<br>";
+		var i;
+
+		for (i=0; i < json.empresas.length; i++) {
+			out+="Nit:"+json.empresas[i].nit+
+				"- Nombre:"+json.empresas[i].nombre+
+				"- Telefono:"+json.empresas[i].telefono+
+				"- E-mail:"+json.empresas[i].email+"<br>";
+		}
+		document.getElementById("empresas").innerHTML = out;
+	}
+
+	leerJSON(jsObj);
+</script>
+</html>

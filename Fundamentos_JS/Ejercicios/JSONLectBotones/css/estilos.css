@@ -1,0 +1,28 @@
+#contenedor{
+  border: 5px dashed black;
+  display: inline-block;
+  height: 25px;
+  width: 400px;
+  text-align: center;
+  padding: 10px;
+  background: hsla(200,60%,50%,0.65);
+}
+#contenedor h1{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#boton{
+	min-height: 200px;
+  flex: 1 2 40%;
+  border: 2px solic black;
+  display: inline-block;
+  text-align: justify;
+  padding: 10px;
+  background: #fff;
+}
+
+.caja{
+	display: flex;
+  flex-flow: colum wrap;
+}

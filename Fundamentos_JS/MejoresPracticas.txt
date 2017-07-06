@@ -1,0 +1,13 @@
+1. No usar variables globales.
+2. Usar variables locales.
+3. Para declarar variables numericas, no utilizar objetos.
+	Evita: 
+		Lentitud en la ejecucion y vulnerables a grandes riesgos.
+	Mejor:
+		Sustituir los new String() por "".
+		Sustituir los new function por (){}. Ej= var c=function(){}.
+4. No declara mas de un valor a una variable.
+	Altera el resultado a esperar.
+5. crear correctamente los Arrays.
+	Evitar ','' despues del ultimo valor.
+6. Asignar los parametros a funcion que lo exijan.

@@ -1,0 +1,24 @@
+EVENTOS : Tipos
+
+Cada elemento html tiene asociado uno o varios eventos:
+	+ Evento onblur: Se da cuando un elemento es deseleccionado, o sea, pierde el foco. Lo soportan <button>,<input>, <label>, <select>, <		textarea>, <body>
+	+ Onchange: Se dispara cuando cambia el valor de un elemento. Soportan <input>, <select>, <textarea>
+	+ onclick: Cuando el usuario realiza un click en la pagina. Lo soportan todos los elementos.
+	+ ondblclick: Ocurre cuando hay doble click en un elemento. Lo soportan todos los elementos.
+	+ onfocus. Cuando un elemento es seleccionado. Lo soportan <button>,<input>, <label>, <select>, <textarea>, <body>
+	+ onkeydown: Ocurre cuando se presiona una tecla sin soltarla. Lo soportan el <body> y todos los elementos de un formulario.
+	+ onkeypress: Ocurre cuando se presiona una tecla una sola vez.Lo soportan el <body> y todos los elementos de un formulario.
+	+ onkeyup: Ocurre cuando se suelta la tecla pulsada. Lo soportan el <body> y todos los elementos de un formulario.
+	+ onload: Ocurre cuando se carga la pagina html. Lo soporta el body.
+	+ onmousedown: Ocurre cuando se pulsa el boton sin soltarlo. Soportan todos.
+	+ onmousemove: Ocurre cuando se mueve el mouse sin soltar. Soportan todos.
+	+ onmouseout: Cuando sçesta en un elemento y pasa a otro.
+	+ onmouseover: Cuando pasa por sobre un elemento.
+	+ onmouseup: Cuando soltamos el boton.
+	+ onreset: Ocurre cuando se van a borrar todos los valores de un formulario. Lo soporta formulario.
+	+ onresize: Ocurre cuando se modifican las dimensiones de la ventana del navegador. Lo soporta el body.
+	+ onselect: Ocurre cuando se selecciona un texto. Lo soporta <input> y <textarea>.
+	+ onsubmit: Ocurre en el caso de formularios, se dispara cuando se presiona grabar.
+	+ onunload: Ocurre cuando el usuario sale de la pagina. Lo soporta el body.
+
+
