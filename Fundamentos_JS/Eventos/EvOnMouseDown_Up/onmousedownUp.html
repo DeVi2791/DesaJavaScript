@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>On Mouse Down Up</title>
+	</head>
+	<body>
+		<h1 id="texto" onmousedown="mouseDown()" onmouseup="mouseUp()">NextUniversity</h1>
+		<script type="text/javascript">
+			function mouseDown(){
+				document.getElementById("texto").style.color = "green";
+			}
+			function mouseUp(){
+				document.getElementById("texto").style.color = "yellow";
+			}
+		</script>
+	</body>
+</html>

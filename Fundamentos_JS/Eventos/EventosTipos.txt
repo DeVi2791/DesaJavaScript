@@ -12,7 +12,7 @@ Cada elemento html tiene asociado uno o varios eventos:
 	+ onload: Ocurre cuando se carga la pagina html. Lo soporta el body.
 	+ onmousedown: Ocurre cuando se pulsa el boton sin soltarlo. Soportan todos.
 	+ onmousemove: Ocurre cuando se mueve el mouse sin soltar. Soportan todos.
-	+ onmouseout: Cuando sçesta en un elemento y pasa a otro.
+	+ onmouseout: Cuando esta en un elemento y pasa a otro.
 	+ onmouseover: Cuando pasa por sobre un elemento.
 	+ onmouseup: Cuando soltamos el boton.
 	+ onreset: Ocurre cuando se van a borrar todos los valores de un formulario. Lo soporta formulario.

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html"; charset="UTF-8"/>
+		<title>Registro de Usuarios</title>
+		<!--Iniciamos nuestro JavaScript/-->
+		<script>
+			function ev_onload(){
+				alert("Bienvenido a nuestro formulariode Registro de Usuarios");
+			}
+			function ev_onclick(){
+				alert("Los Datos han sido enviados");
+			}
+			function ev_onfocus(obj){
+				obj.style.background = "#CCCCCC";
+			}
+			function ev_oncopy(){
+				alert("El texto fue copiado");
+			}
+			function ev_onunfocus(obj){
+				obj.style.background = "#789cb4";
+			}
+		</script>
+	</head>
+	<body onload="ev_onload()">
+		<h4>Formulario de Registro de Usuarios</h4>
+		<table>
+			<form id="formulario">
+				<tr>
+					<td><label>Nombre:</label></td>
+					<td><input id="nombres" name="nombres" type="text" onfocus="ev_onfocus(this)" onblur="ev_onunfocus(this)"/></td>
+				</tr>
+				<tr>
+					<td><label>Apellidos:</label></td>
+					<td><input id="apellidos" name="apellidos" type="text" onfocus="ev_onfocus(this)"/></td>
+				</tr>
+				<tr>
+					<td><label>Identificacion: </label></td>
+					<td><input id="identificacion" name="identificacion" type="text" oncopy="ev_oncopy()"/></td>
+				</tr>
+				<tr>
+					<td><label>Sexo: </label></td>
+					<td>
+						<select id="sexo" name="sexo">
+							<option name="" value=""></option>
+							<option name="masculino" value="masculino">Masculino</option>
+							<option name="femenino" value="femenino">Femenino</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label>Email: </label></td>
+					<td><input id="email" name="email" type="text" /></td>
+				</tr>
+				<tr>
+					<td><label>Teléfono: </label></td>
+					<td><input id="fono" name="fono" type="text" /></td>
+				</tr>
+				<tr>
+					<td><label>Dirección: </label></td>
+					<td><input id="direccion" name="direccion" type="text" /></td>
+				</tr>
+				<tr>
+					<td><input id="enviar" name="enviar" type="submit" value="Enviar" onclick="ev_onclick()" /></td>
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>
