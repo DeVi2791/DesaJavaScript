@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html"; charset="UTF-8" />
+    <title>Evaluacion Final JavaScript</title>
+  	<script type="text/javascript" src="js/mijson.js"></script>
+    <style type="text/css">
+    	body{
+    		background: #ECF0F1;
+    	}
+    	label{
+    		font-weight: bold;
+    	}
+    	select{
+    		width: 100%;
+    	}
+    	#contenedor{
+    		background: #78ab54;
+    		width: 500px;
+    		margin: 100px 0 0 400px;
+    	}
+      #caja{
+    		background: white;
+        padding: 10px;
+    	}
+
+    </style>
+  </head>
+  <body>
+    <div id="contenedor" align="center">
+      <table>
+        <tr>
+          <td><label>+ Mostrar Objetos:</label></td>
+          <td><div id="caja"><p id="todo" ></p></div></td>
+          <td><input id="bttodo" name="bttodo" type="button" onclick="mostrarTodo()" value="Mostrar Todo"/></td>
+        </tr>
+        <tr>
+          <td><label>+ Calcular Promedio:</label></td>
+          <td><div id="caja"><p id="promedio" ></p></div></td>
+          <td><input id="btprom" name="btprom" type="button" onclick="calPromedio()" value="Calcular Promedio"/></td>
+        </tr>
+        <tr>
+          <td><label>+ Mayor Nota:</label></td>
+          <td><div id="caja"><p id="mayNota" ></p></div></td>
+          <td><input id="btmayor" name="btmayor" type="button" onclick="mayNota()" value="Mostrar Mayor Nota"/></td>
+        </tr>
+        <tr>
+          <td><label>+ Menor Nota:</label></td>
+          <td><div id="caja"><p id="menNota" ></p></div></td>
+          <td><input id="btmenor" name="btmenor" type="button" onclick="menNota()" value="Mostrar Menor Nota"/></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
