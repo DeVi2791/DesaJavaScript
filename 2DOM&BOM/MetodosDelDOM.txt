@@ -1,0 +1,4 @@
+DOM
+	Los métodos del DOM son las acciones que se pueden realizar sobre los elementos HTML. Son todos esos procesos
+	que tienen como función llevar a cabo una serie de acciones y ejecutarlas sobre las etiquetas que hacen parte
+	de las páginas HTML. Estas acciones se codifican usando lenguajes como JavaScript.
