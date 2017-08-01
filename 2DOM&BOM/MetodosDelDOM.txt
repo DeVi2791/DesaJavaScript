@@ -2,3 +2,28 @@ DOM
 	Los métodos del DOM son las acciones que se pueden realizar sobre los elementos HTML. Son todos esos procesos
 	que tienen como función llevar a cabo una serie de acciones y ejecutarlas sobre las etiquetas que hacen parte
 	de las páginas HTML. Estas acciones se codifican usando lenguajes como JavaScript.
+	
+	Métodos.
+		+ getElementById(id_element) .- Devuelve la lista ordenada de todos los nodos elements cuyo id corresponda 
+			al id_element.
+		+ getElementByTagName(N) .- Devuelve la lista ordenada de todos los nodos elements cuyo nombre corresponda 
+			al parámetro enviado.
+		+ createElement(Tipo) .- Se le envía el tipo del nodo que queremos especificar para crear.
+		+ createTextNode (String) .- crea un nodo de tipo Text de valor String.
+		+ appendChild (nuevo) .- Añade el nodo al final del conjunto de hijos del nodo al que se aplica.
+		+ removeChild (Nodo) .- Elimina el nodo del conjunto de hijos del nodo al que se aplica.
+		+ getNamedItem (Nombre) .- Obtiene el valor del atributo especificado en el parámetro Nombre.
+		+ getAttribute(Nombre) .- Devuelve el valor de un atributo especifico del elemento.
+		+ setAttribute(Nombre,Valor) .- Añade un nuevo atributo y un nuevo valor.
+		+ insertRow(Número) .- Añade una fila antes de la posicion que enviamos como parámetro.
+		+ deleteRow(Número) .- elimina la sucesión de la fila y el lugar del parámetro enviado.
+		+ insertCell(Número) .- inserta una Celda en la fila antes de la celda que ocupa el lugar del atributo enviado.
+	Propiedades.
+		+ Attributes
+		+ Value
+		+ Images
+		+ ClassName
+		+ Elements
+		+ Src
+		+ Width
+		+ Height
