@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio getElementByTagName</title>
+</head>
+<body>
+	<p>Desarrollar un documento HTML que simulará un formulario de tres campos de tipo “input” y “label” (Nombres, Apellidos, Email). Adicionalmente, se debe adicionar un “label” y un campo de tipo “textarea” (Comentario); finalmente, se debe desarrollar un botón que simulará el envío o almacenamiento de los datos del formulario. Implementar el uso de “getElementByTagName” en el documento HTML para determinar la cantidad de elementos de tipo “input”, “label” y “p” en nuestro HTML. Los campos de tipo “p” son opcionales.
+
+	Se debe usar alertas distintas para la salida de los resultados.</p>
+	<h2>Solucion</h2>
+	<form name="formContacto" autocomplete="on">
+		<!-- Permite crear un marco con etiqueta/-->
+		<fieldset>
+			<!-- legend permite colocar el titulo de la etiqueta en el marco/-->
+			<legend>Datos Personales</legend>
+			<p>En el siguiente formulario debes diligenciar tus datos básicos.</p>
+			<p>Todos los campos deben estar completos y la información debe ser real.</p>
+			<!--label Crea etiquetas en un formulario/-->
+			<p>
+				<label for="Nombre">Nombre: </label>
+				<input type="text" id="Nombre" required>
+				</br>
+			</p>
+			<p>
+				<label for="Apellido">Apellido: </label>
+				<input type="text" id="Apellido">
+				</br>
+			</p>
+			<p>
+				<label for="email">Email: </label>
+				<!-- El atributo required, permite no enviar el formulario sin el campo lleno o con formato email/-->
+				<input type="email" id="email" required>
+				</br>
+			</p>
+			<p>
+				<label for="coment">Comentarios: </label>
+				<!--Permite crear una caja de texto con de varias líneas o área de texto/-->
+				<textarea name="areatext" rows="8" cols="40"></textarea>
+				</br>
+			</p>
+			<!--botón de guardar/-->
+			<!-- el atributo submit permite guardar los datos ingresados en el formulario/-->
+			<!-- el atributo value permite indicar el contenido o etiqueta del botón/-->
+			<input type="submit" value="Enviar">
+			<input type="button" value=":D">
+			<input type="reset" value="Limpiar Formulario">
+		</fieldset>
+	</form>
+	<script>
+		var input = document.getElementsByTagName("input");
+		var label = document.getElementsByTagName("label");
+		var cantinput = input.length;
+		var cantlabel = label.length;
+		alert("Nuestro documento HTML tiene "+cantinput+" elementos input y "+cantlabel+" elementos label.");
+	</script>
+</body>
+</html>

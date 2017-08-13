@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio Tabla de Productos</title>
+	<script type="text/javascript" src="js/javascript.js"></script>
+</head>
+<body>
+	<p>Desarrollar un documento HTML en donde se creará la siguiente tabla:</p>
+	<p>La columna Precio está formada por inputs con sus respectivos ids, que no se podrán editar con los respectivos valores. La columna Cantidad está formada por sus respectivos ids. Estos inputs sí son editables ya que se podrá asignar la cantidad del producto que se va a comprar. Por último está la columna Subtotal, que está formada por inputs con sus respectivos ids, los cuales no son editables.
+
+	Crear un input con su id y con el texto “Total Compra:”, el cual mostrará el total de la compra.
+
+	Luego crear dos botones. El primer botón tendrá el texto “Calcular Subtotales”, y al hacer clic sobre el botón calcular los subtotales de cada producto comprado. El segundo botón, con texto “Calcular Total”, calculará el total de la compra  realizando la respectiva sumatoria de subtotales.</p>
+	<h2>Solucion</h2>
+	<table border="1">
+		<!--thead es la cabecera de la tabla/-->
+		<thead>
+			<!--tr implica la creación de un registro o fila en la tabla/-->
+			<tr>
+				<!--th implica resaltar el registro/-->
+				<th>Producto</th>
+				<th>Precio</th>
+				<th>Cantidad</th>
+				<th>Subtotal</th>
+			</tr>
+		</thead>
+		<!--tbody es el cuerpo de la tabla/-->
+		<tbody>
+			<tr>
+				<!--td implica un registro en la tabla común/-->
+				<td>Camisa</td>
+				<td><input type="text" id="PrecioCamisa" disable value="30000"></td>
+				<td><input type="text" id="CantCamisa" required></td>
+				<td><input type="text" id="SubTotCamisa" disable></td>
+			</tr>				
+			<tr>
+				<td>Gorra</td>
+				<td><input type="text" id="PrecioGorra" disable value="50000"></td>
+				<td><input type="text" id="CantGorra" required></td>
+				<td><input type="text" id="SubTotGorra" disable></td>
+			</tr>
+			<tr>
+				<td>Zapatos</td>
+				<td><input type="text" id="PrecioZapatos" disable value="60000"></td>
+				<td><input type="text" id="CantZapatos" required></td>
+				<td><input type="text" id="SubTotZapatos" disable></td>
+			</tr>
+			<tr>
+				<td>Pantalon</td>
+				<td><input type="text" id="PrecioPant" disable value="80000"></td>
+				<td><input type="text" id="CantPant" required></td>
+				<td><input type="text" id="SubTotPant" disable></td>
+			</tr>
+		</tbody>
+		<!--tfoot es el pie de la tabla/-->
+		<tfoot>
+			<tr>
+				<!--el atributo colspan permita la combinación del número de columnas indicado. NO SUSPERAR EL NÚMERO DE COLUMNAS/-->
+				<!--el atributo rowspan permita la combinación del número de filas indicado./-->
+				<th colspan="3">Total Compra</th>
+				<td><input type="text" id="Total" disable></td>
+			</tr>
+		</tfoot>
+	</table>
+	<br>
+	<input type="button" id="CalcSubt" value="Calcular Subtotal" onclick="calcSubt()">
+	<input type="button" id="CalcTot" value="Calcular Total" onclick="calcTotal()">
+	<br>
+</body>
+</html>

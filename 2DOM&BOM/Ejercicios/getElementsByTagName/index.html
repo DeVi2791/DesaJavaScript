@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio getElementByTagName</title>
+</head>
+<body>
+	<p>Implemente el uso del método “getElementsByTagName” en un documento HTML para determinar la cantidad de elementos de tipo enlace. Debemos desarrollar antes una cantidad de enlaces para hacer uso del método. Los enlaces deben direccionar a las páginas de Google, Facebook, Twitter y Youtube.</p>
+	<h2>Solucion</h2>
+	<ul>
+		<li><a href="https://www.google.com" target="_blank">Google</a></li>
+		<li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+		<li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+	</ul>
+	<script>
+		var vinculo = document.getElementsByTagName("a");
+		var cantidad = vinculo.length;
+		alert("Nuestro documento HTML tiene "+cantidad+" vinculos.");
+	</script>
+</body>
+</html>
